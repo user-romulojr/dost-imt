@@ -62,7 +62,7 @@
                                     <div class="label-remember"><label for="remember_me">Remember me</label></div>
                                 </div>
                                 
-                                <!-- Submit Buttom -->
+                                <!-- Submit Button -->
                                 <div class="submit-container">
                                     <input type="submit" class="input-submit" value="SIGN IN">
                                 </div>

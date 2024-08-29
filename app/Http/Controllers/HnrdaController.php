@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class HnrdaController extends Controller
 {
     public function index() {
-        $allHnrda = Hnrda::all() ;
+        $allHnrda = Hnrda::all();
         return view('library.hnrda.index', ['allHnrda' => $allHnrda]);
     }
 

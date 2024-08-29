@@ -13,7 +13,25 @@ class UserController extends Controller
 {
     public function index() {
         $allUser = User::all();
-        return view('library.users.index', ['allUser' => $allUser]);
+
+        $accessLevel = [
+            '1' => 'Executive',
+            '2' => 'Planning Director',
+            '3' => 'Planning Officer',
+            '4' => 'Agency Head',
+            '5' => 'Agency Focal',
+            '6' => 'User',
+        ];
+
+        $colorCode = [
+            '1' => '#b8860b',
+            '2' => '#708090',
+            '3' => '#dc143c',
+            '4' => '#008080',
+            '5' => '#4b0082',
+            '6' => 'black',
+        ];
+        return view('library.users.index', ['allUser' => $allUser, 'accessLevel' => $accessLevel, 'colorCode' => $colorCode]);
     }
     
     public function store(Request $request) {
